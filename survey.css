@@ -1,0 +1,197 @@
+/* GENERAL RESET */
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background-color: #002147;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 40px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* SURVEY BANNER */
+./* SURVEY BANNER */
+.banner {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    background-color: #566d89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.banner-content h2 {
+    color: white;
+    font-size: 35px;
+}
+
+
+/* PROGRESS INDICATOR */
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 35px 20px;
+    background-color: white;
+}
+
+.step {
+    text-align: center;
+    color: #777;
+}
+
+.step span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step.active span {
+    background-color: #D4AF37;
+    color: #002147;
+}
+
+.step.active p {
+    color: #002147;
+    font-weight: bold;
+}
+
+/* SURVEY FORM */
+.survey-form {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.survey-form h2 {
+    color: #002147;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #D4AF37;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: white;
+}
+
+legend {
+    color: #002147;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* FORM GROUPS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #002147;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* RADIO BUTTONS */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+/* INPUT FOCUS */
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #D4AF37;
+    border-color: #002147;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .banner h2 {
+        font-size: 25px;
+    }
+
+    .progress {
+        gap: 20px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+}
